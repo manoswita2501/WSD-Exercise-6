@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+    <form class="registration-form">
+
+        <!-- form header -->
+        <div class="form-header">
+            <h2>To register with us, enter the following details:</h2>
+        </div>
+
+        <!-- form body -->
+        <div class="form-body">
+            <div>
+                <label for="full-name"><b>Enter your Full Name:</b></label>
+                <input type="text" id="full-name" name="full-name" required minlength="3">
+                <span class="status" data-for="full-name"></span>
+            </div>
+            <div>
+                <label for="email"><b>Enter your e-mail address:</b></label>
+                <input type="email" id="email" name="email" required>
+                <span class="status" data-for="email"></span>
+            </div>
+            <div>
+                <label for="password"><b>Enter your password:</b></label>
+                <input type="password" id="password" name="password" required minlength="8">
+                <span class="status" data-for="password"></span>
+            </div>
+            <div>
+                <label for="confirm-password"><b>Confirm your password now:</b></label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <span class="status" data-for="confirm-password"></span>
+            </div>
+            <div>
+                <label for="dob"><b>Enter your date of birth:</b></label>
+                <input type="date" id="dob" name="dob" required>
+                <span class="status" data-for="dob"></span>
+                <p id="age-message"></p>
+            </div>
+        </div>
+
+        <!-- form footer -->
+        <div class="form-footer">
+            <button type="submit" class="btn" active>Submit Details to Register</button>
+            <br><br>
+            <span>Form created by Manoswita</span>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
